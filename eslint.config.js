@@ -59,6 +59,9 @@ export default [
       // Fix: Disable conflicting sort rule to let Prettier handle it
       'sort-imports': 'off',
 
+      // Disable this to let Prettier handle it
+      'import/order': 'off',
+
       '@typescript-eslint/no-unnecessary-condition': 'warn', // or 'off'
 
       // Fix: Allow inline type imports (Essential for Shadcn UI)
