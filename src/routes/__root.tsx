@@ -1,4 +1,5 @@
 import { TanStackDevtools } from '@tanstack/react-devtools'
+import { type QueryClient } from '@tanstack/react-query'
 import { ReactQueryDevtoolsPanel } from '@tanstack/react-query-devtools'
 import {
   createRootRouteWithContext,
@@ -12,10 +13,9 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { getAuth, getSignInUrl } from '@workos/authkit-tanstack-react-start'
 import { AuthKitProvider } from '@workos/authkit-tanstack-react-start/client'
 
-
-import  { type QueryClient } from '@tanstack/react-query'
 import appCss from '../shared/styles/base.css?url'
 import { ThemeProvider } from '@/shared/providers/theme'
+
 
 interface RouterContext {
   queryClient: QueryClient
